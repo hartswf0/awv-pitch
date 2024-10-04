@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWV Telehealth - Comprehensive Presentation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f3e9;
+            color: #333;
+            margin: 0;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .slide {
+            background: #ffe4d1;
+            color: #000;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #ed1c24;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p, ul {
+            font-size: 1.1em;
+            color: #000;
+            max-width: 1000px;
+            margin: 0 auto 20px;
+            text-align: left;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+        }
+        ul li::before {
+            content: "\2022";
+            color: #ed1c24;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        strong {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            color: #ed1c24;
+            font-size: 1.1em;
+        }
+        #capture-all-button {
+            background: #ed1c24;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+            display: block;
+            margin: 20px auto;
+        }
+        #capture-all-button:hover {
+            background: #c51017;
+        }
+        .title-slide {
+            text-align: center;
+            padding: 60px 40px;
+        }
+        .title-slide h1 {
+            font-size: 3.5em;
+            color: #ed1c24;
+            margin-bottom: 20px;
+        }
+        .title-slide .tagline {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .title-slide .date, .title-slide .contact-info {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .icon-container {
+            margin-bottom: 20px;
+        }
+        .icon {
+            max-width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="slides-container">
+        <!-- Title Slide -->
+        <div class="slide title-slide">
+            <div class="icon-container">
+                <img src="/api/placeholder/150/150" alt="AWV Telehealth Logo" class="icon">
+            </div>
+            <h1 class="title">AWV Telehealth</h1>
+            <p class="tagline">Revolutionizing Preventive Medicare Care with AI</p>
+            <p class="date">October 4, 2024</p>
+            <p class="contact-info">Contact Information: [Your Contact Info]</p>
+        </div>
+
+        <!-- Executive Summary Slide -->
+        <div class="slide" id="executive-summary">
+            <h2>Executive Summary</h2>
+            <p>AWV Telehealth is an AI-first, audio-only telemedicine platform dedicated to Medicare Annual Wellness Visits (AWVs). Utilizing advanced real-time AI voice engines, we enhance provider efficiency, expand patient access—especially in underserved and rural areas—and prioritize responsibility and compassionate care. Positioned as an attractive acquisition target for major healthcare providers and private equity firms, AWV Telehealth is set to transform preventive healthcare for millions of Medicare beneficiaries.</p>
+        </div>
+
+        <!-- Problem Statement Slide -->
+        <div class="slide" id="problem-statement">
+            <h2>Problem Statement</h2>
+            <ul>
+                <li>Provider Burden: Time-intensive AWVs lead to revenue losses and CMS penalties.</li>
+                <li>Limited Patient Access: Barriers in rural and underserved areas result in unmet preventive care needs.</li>
+                <li>Underutilization of AWVs: Low completion rates hinder early detection and increase long-term healthcare costs.</li>
+                <li>Digital Divide: Lack of access to video-based telehealth due to low broadband, technological proficiency, or language barriers.</li>
+            </ul>
+        </div>
+
+        <!-- Our Solution Slide -->
+        <div class="slide" id="our-solution">
+            <h2>Our Solution</h2>
+            <p>AWV Telehealth addresses these challenges with a comprehensive, AI-driven approach:</p>
+            <ul>
+                <li><strong>AI-Enhanced Remote AWVs:</strong> Conduct Medicare-compliant, audio-only visits via advanced AI voice engines, maximizing accessibility without in-person appointments.</li>
+                <li><strong>Dedicated Nurse and AI Hybrid Network:</strong> Combine trained nurses with AI support for efficient, high-quality AWVs, ensuring consistency and personalized care.</li>
+                <li><strong>Advanced Automation and Data Collection:</strong> Streamline scheduling, documentation, billing, and data collection through AI-driven processes, reducing administrative burdens.</li>
+                <li><strong>SDOH Integration:</strong> Incorporate Social Determinants of Health (SDOH) assessments to identify and address broader patient needs, connecting them with community resources.</li>
+            </ul>
+        </div>
+
+        <!-- Market Opportunity Slide -->
+        <div class="slide" id="market-opportunity">
+            <h2>Market Opportunity</h2>
+            <ul>
+                <li><strong>Expansive Reach:</strong> Over 60 million Medicare beneficiaries demand accessible preventive care.</li>
+                <li><strong>Favorable Regulations:</strong> CMS policies incentivize higher AWV completion rates.</li>
+                <li><strong>Telehealth Momentum:</strong> Sustained growth in telehealth adoption supports scalability and acceptance.</li>
+                <li><strong>AI Integration:</strong> Rising acceptance of AI in healthcare opens avenues for innovative solutions like AWV Telehealth.</li>
+            </ul>
+        </div>
+
+        <!-- Business Model Slide -->
+        <div class="slide" id="business-model">
+            <h2>Business Model</h2>
+            <ul>
+                <li><strong>Strategic Partnerships:</strong> Collaborate with healthcare systems, medical practices, and Accountable Care Organizations (ACOs) to seamlessly integrate AWV services.</li>
+                <li><strong>Revenue Sharing:</strong> Implement a fee-per-AWV model, sharing revenues with partners to drive mutual growth.</li>
+                <li><strong>Scalable Operations:</strong> Utilize a nurse-led, AI-supported telehealth approach to scale efficiently with increasing demand.</li>
+            </ul>
+        </div>
+
+        <!-- Competitive Advantage Slide -->
+        <div class="slide" id="competitive-advantage">
+            <h2>Competitive Advantage</h2>
+            <ul>
+                <li><strong>AI-First Approach:</strong> Advanced real-time AI voice technology enhances AWV efficiency and quality.</li>
+                <li><strong>Specialized Focus on AWVs:</strong> Exclusive concentration ensures deep expertise and CMS compliance.</li>
+                <li><strong>Proprietary Technology:</strong> AI-driven automation tools streamline operations from scheduling to billing.</li>
+                <li><strong>Scalable Workforce:</strong> A robust network of trained nurses supported by AI meets rising demand flexibly while maintaining high service standards.</li>
+            </ul>
+        </div>
+
+        <!-- Financial Projections Slide -->
+        <div class="slide" id="financial-projections">
+            <h2>Financial Projections</h2>
+            <p>Year 1: $500,000 in revenue</p>
+            <p>Year 3: $5,000,000 in revenue</p>
+            <p>Year 5: $20,000,000 in revenue</p>
+            <p>Projections based on strategic partnerships, market penetration, AI-driven scalability, and increasing telehealth demand.</p>
+        </div>
+
+        <!-- Supporting Value Proposition Slide -->
+        <div class="slide" id="supporting-value-proposition">
+            <h2>Supporting Value Proposition</h2>
+            <p>Our AI-First Approach ensures that every Annual Wellness Visit (AWV) is enhanced by advanced AI technologies, making the entire process efficient and responsible.</p>
+            <ul>
+                <li><strong>Advanced Real-Time AI Voice Engines:</strong> Enable seamless, interactive AWVs with accurate data collection and enhanced patient engagement.</li>
+                <li><strong>Data Collection & Analysis:</strong> AI-driven systems provide actionable insights for personalized care and improved health outcomes.</li>
+                <li><strong>Future-Proof Technology:</strong> Continuously evolves with AI and telehealth advancements, ensuring long-term sustainability and adaptability.</li>
+            </ul>
+        </div>
+
+        <!-- Competitive Advantage & Nurse-Led Model Slide -->
+        <div class="slide" id="competitive-advantage-nurse-led">
+            <h2>Competitive Advantage & Nurse-Led Model</h2>
+            <p>Our approach validates the role of nurse-led models in delivering Annual Wellness Visits (AWVs) with efficiency and compliance, showcasing key strengths over traditional physician-led models.</p>
+            <ul>
+                <li><strong>Competitive Landscape:</strong> Comprehensive market research highlights our unique AI-first and specialized AWV focus.</li>
+                <li><strong>Scope of Practice:</strong> Clearly defined roles aligned with state regulations and CMS guidelines.</li>
+                <li><strong>Training & Certification:</strong> Extensive programs ensuring Medicare-compliant AWVs and effective SDOH addressing.</li>
+                <li><strong>Clinical Oversight:</strong> Robust physician protocols for handling complex medical issues during AWVs.</li>
+                <li><strong>Cost-Effectiveness:</strong> Data-driven comparisons show higher efficiency and cost savings over physician-led models, increasing patient throughput through task-shifting.</li>
+            </ul>
+        </div>
+
+        <!-- Alignment with CMS Priorities Slide -->
+        <div class="slide" id="cms-alignment">
+            <h2>Alignment with CMS Priorities</h2>
+            <p>Our solution is strategically aligned with CMS (Centers for Medicare & Medicaid Services) initiatives to support preventive care and improve population health management.</p>
+            <ul>
+                <li><strong>Support for Preventive Care Initiatives:</strong> Automated SDOH (Social Determinants of Health) assessments seamlessly integrated with Electronic Health Records (EHRs).</li>
+                <li><strong>Actionable Insights:</strong> Drive care coordination, community resource referrals, and population health management through precise data-driven recommendations.</li>
+                <li><strong>Supporting Accountable Care Organizations (ACOs):</strong> Enhance AWV completion rates, early risk identification, and improve care coordination to help ACOs achieve quality and cost goals.</li>
+            </ul>
+        </div>
+
+        <!-- Addressing Provider Burden & Access Challenges Slide -->
+        <div class="slide" id="provider-burden">
+            <h2>Addressing Provider Burden & Access Challenges</h2>
+            <p>Our AI-driven, nurse-led telehealth solution helps alleviate resource limitations, especially in underserved areas.</p>
+            <ul>
+                <li><strong>Resource Limitations:</strong> Solutions for practices in underserved regions with limited staff, funding, and technology infrastructure.</li>
+                <li><strong>Geographic Barriers:</strong> Overcome shortages of medical specialists and transportation issues in rural areas, making AWVs accessible via telehealth.</li>
+                <li><strong>Telehealth as a Solution:</strong> Aligns with CMS policy support for expanding telehealth coverage and reimbursement, particularly in underserved communities.</li>
+                <li><strong>Addressing the Digital Divide:</strong> Provide accessible audio-only telehealth for older adults, minorities, and low-income individuals.</li>
+            </ul>
+        </div>
+
+        <!-- Enhancing the Pitch Deck with Additional Elements Slide -->
+        <div class="slide" id="additional-elements">
+            <h2>Enhancing the Pitch Deck with Additional Elements</h2>
+            <ul>
+                <li><strong>Market Research Data:</strong> CDC reports show a 40% increase in telehealth usage among Medicare beneficiaries.</li>
+                <li><strong>Medicare Demographics:</strong> The aging population and rising prevalence of chronic conditions are driving the demand for preventive services like AWVs.</li>
+                <li><strong>AWV Completion Rates:</strong> Kaiser Family Foundation data indicates a 30% low completion rate, highlighting significant opportunities for improvement.</li>
+                <li><strong>Case Studies or Pilot Results:</strong> A pilot program achieved a 30% increase in AWV completion rates and enhanced patient satisfaction scores.</li>
+                <li><strong>Testimonials:</strong>
+                    <ul>
+                        <li>"AWV Telehealth has streamlined our workflow, allowing us to serve more patients efficiently without compromising quality." – Dr. Jane Smith, Primary Care Physician</li>
+                        <li>"Receiving my wellness visit over the phone was incredibly convenient and reassuring. It made managing my health much easier." – John Doe, Medicare Beneficiary</li>
+                    </ul>
+                </li>
+                <li><strong>Detailed Financials:</strong> Revenue model includes a fee-per-AWV structure, projected revenues from strategic partnerships, operating expenses, and growth drivers.</li>
+                <li><strong>Risk Mitigation Strategies:</strong> Include regulatory adaptability, technology security investments, and workforce capacity development.</li>
+            </ul>
+        </div>
+    </div>
+
+    <button id="capture-all-button">Capture All Slides</button>
+
+    <script>
+        function captureAllSlides() {
+            const slides = document.querySelectorAll('.slide');
+            let yOffset = 0;
+            const padding = 20;
+            
+            // Create a canvas large enough to hold all slides
+            const canvas = document.createElement('canvas');
+            canvas.width = slides[0].offsetWidth;
+            canvas.height = Array.from(slides).reduce((total, slide) => total + slide.offsetHeight + padding, 0);
+            const ctx = canvas.getContext('2d');
+            
+            // Capture each slide and draw it onto the canvas
+            Promise.all(Array.from(slides).map(slide => html2canvas(slide))).then(canvases => {
+                canvases.forEach(slideCanvas => {
+                    ctx.drawImage(slideCanvas, 0, yOffset);
+                    yOffset += slideCanvas.height + padding;
+                });
+                
+                // Convert the canvas to an image and trigger download
